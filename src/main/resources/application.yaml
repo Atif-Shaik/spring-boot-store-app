@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: store
+  flyway:
+    enabled: true  # Force it on
+    locations: classpath:db/migration
+  jwt:
+    secret: ${JWT_SECRET}
+    accessTokenExpiration: 900 # 15m
+    refreshTokenExpiration: 604800 # 7d
+  profiles:
+    active: dev
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+  api-docs:
+    path: /v3/api-docs
+razorpay:
+  api:
+    key: ${RAZORPAY_API_KEY}
+    secret: ${RAZORPAY_API_SECRET}
+  webhook:
+    secret: ${RAZORPAY_WEBHOOK_SECRET_KEY}

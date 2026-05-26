@@ -1,0 +1,2 @@
+ALTER TABLE orders
+    ADD tracking_id VARCHAR(255) DEFAULT NULL;
