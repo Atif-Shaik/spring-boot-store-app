@@ -44,3 +44,18 @@ The application is fully compiled, containerized, and running a live microservic
 Verified authentication, password encryption, and user resource registration loops across cloud routing endpoints.
 
 ![Postman API Validation](screenshots/postman-response.png)
+
+## 🏁 How to Run Locally
+
+### 1. Prerequisites
+* JDK 21 or higher installed
+* MySQL Server running locally
+
+### 2. Environment Configurations
+Create a local `.env` file in the root directory (this file is excluded from version control via `.gitignore` for security):
+```env
+SPRING_DATASOURCE_URL=jdbc:mysql://localhost:3306/store_database
+RAZORPAY_API_KEY=your_test_key
+RAZORPAY_API_SECRET=your_test_secret
+RAZORPAY_WEBHOOK_SECRET_KEY=your_webhook_secret
+JWT_SECRET=your_jwt_signing_token
