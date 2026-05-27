@@ -37,3 +37,10 @@ Optimized entity graphs and transaction states to prevent performance bottleneck
 
 ### I. Cloud Infrastructure Status
 The application is fully compiled, containerized, and running a live microservice orchestration grid alongside a managed cloud MySQL database.
+
+![Railway Deployment Status](screenshots/railway-success.jpg)
+
+### II. Production REST Client Validation
+Verified authentication, password encryption, and user resource registration loops across cloud routing endpoints.
+
+![Postman API Validation](screenshots/postman-response.jpg)
