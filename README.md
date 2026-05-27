@@ -1,5 +1,7 @@
 # 🛒 Store API — Enterprise E-Commerce & Payment Engine
 
+> 💡 **Deployment Notice:** This application was successfully containerized and deployed live on production cloud infrastructure via Railway alongside a managed cloud MySQL database (see evidence verification screenshots below). To prevent redundant credit consumption on a sandbox learning project, the hosting instance is currently paused. All business logic workflows, REST controller endpoints, and financial integration layers can be compiled and reviewed seamlessly via the local installation guide.
+
 A robust, production-grade, full-stack capable backend REST API engineered using **Java 21**, **Spring Boot**, and **MySQL**. This application features an enterprise-grade database schema architecture, asynchronous third-party webhook transaction processors, performance-optimized object-relational mapping pipelines, and secure cloud environment separation.
 
 ---
@@ -59,3 +61,4 @@ RAZORPAY_API_KEY=your_test_key
 RAZORPAY_API_SECRET=your_test_secret
 RAZORPAY_WEBHOOK_SECRET_KEY=your_webhook_secret
 JWT_SECRET=your_jwt_signing_token
+SPRING_PROFILES_ACTIVE=prod
